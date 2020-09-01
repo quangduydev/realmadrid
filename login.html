@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Who are you?</title>
+	<link rel="stylesheet" type="text/css" href="Style/login.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" type="Image/png" href="Image/logoreal.png">
+</head>
+<body>
+	 
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+
+            <div class="social-icon">
+			   <i class="fab fa-facebook-square"></i>
+			   <i class="fab fa-instagram"></i>
+			   <i class="fab fa-twitter-square"></i>
+		    </div>
+		    <form action="" class="input-group" id="Login">
+		    	<i class="fas fa-user"></i><input type="text" placeholder="User" class="input-field" required>
+		    	<i class="fas fa-user-lock"></i><input type="password" placeholder="Password" class="input-field" required>
+		    	<input type="checkbox" class="check-box"><span>Remember me</span>
+		    	<button type="submit" class="submit-btn">Login</button>
+		    </form>
+
+		    <!--Rigister-->
+		    <form action="" class="input-group" id="Register">
+		    	<i class="fas fa-user"></i><input type="text" placeholder="User" class="input-field" required>
+		    	<i class="fas fa-envelope-open-text"></i><input type="email" placeholder="Email" class="input-field" required>
+		    	<i class="fas fa-user-lock"></i><input type="password" placeholder="Password" class="input-field" required>
+		    	<input type="checkbox" class="check-box"><span>I agree to the term & conditions</span>
+		    	<button type="submit" class="submit-btn">Register</button>
+		    </form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var x = document.getElementById("Login")
+		var y = document.getElementById("Register")
+		var z = document.getElementById("btn")
+
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+	</script>
+</body>
+</html>

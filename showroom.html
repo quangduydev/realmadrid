@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>REAL MADRID</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="Image/png" href="Image/logo.png">
+<link rel="stylesheet" type="text/css" href="W3/w3.css">
+<link rel="stylesheet" type="text/css" href="Style/showroom.css">
+<link rel="stylesheet" type="text/css" href="Style/loading.css">
+<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="JS/script.js"></script>
+<script type="text/javascript" src="JS/backtop.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" type="text/css" href="ihover/src/ihover.css">
+<script type="text/javascript" src="WOW-master/WOW/dist/wow.min.js"></script>
+<script type="text/javascript"> new WOW().init();</script>
+<link rel="stylesheet" type="text/css" href="WOW-master/WOW/css/libs/animate.css">
+</head>
+<body class="preloading">
+<!--loading-->
+ <div class="load">
+   <img src="Image/loader1.gif">
+</div> 	
+  <!-- Sidebar/menu -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="#">Stadium</a>
+  <a href="#">History</a>
+  <button class="dropdown-btn">Support 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Fan Club</a>
+    <a href="#">Tradition song</a>
+    <a href="#">Real Madrid TV</a>
+  </div>
+</div>
+
+<div id="main">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// Script to open and close sidebar
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+	
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}	
+</script>
+</body>
+</html>

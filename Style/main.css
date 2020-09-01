@@ -1,0 +1,175 @@
+body {
+  font-family: cursive;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    transition: 0.6s;
+}
+
+/*change icon menu*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 3px 0 ;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 3px);
+  transform: rotate(-45deg) translate(-9px, 3px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -4px);
+  transform: rotate(45deg)  translate(-8px, -4px);
+}
+
+/*hover "load more" button*/
+.more {
+  border-radius: 4px;
+  background-color: #464c36e0;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.more:hover span {
+  padding-right: 25px;
+}
+
+.more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*"back to top" button*/
+.btn-top{
+  display: none;
+}
+.btn-top i{
+    bottom: 20px;
+    cursor: pointer;
+    outline: medium none;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    z-index: 10000;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: rotate(135deg);
+}
+.btn-top i:hover{
+  color: red;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+/*Socical icon hover*/
+.socialicon i{
+ 
+  width: 40px;
+  height: 40px;
+  padding-top: 9px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.socialicon i:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+  background:#bfbfbf;
+  border-radius: 5px;
+}
+footer{
+  background-color: #8c8c8c;
+}
+
+/*hover button "Send"*/
+.send{
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  color:#fff;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  text-align: center;  
+  position: relative;
+  
+}
+.send p{
+  font-size: 16px;
+  margin-top: 12px;
+}
+.layer{
+  
+  position: absolute;
+   top: 0;
+   left: 0;
+  height: 50px;
+  width: 100px;
+  background-color: #8c8c8c;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.6s;
+}
+.layer i{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.send:hover .layer{
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.6s;
+}
+
+/*responsive cho button top*/
+ @media screen and (max-width: 800px) {
+  .btn-top i{
+  display: none;
+  }
+/* .btn-top i{
+    bottom: 300px;
+    cursor: pointer;
+    outline: medium none;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    z-index: 10000;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: rotate(135deg);
+  } */
+}
